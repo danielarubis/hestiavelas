@@ -63,29 +63,28 @@ a {
   cursor: pointer;
 }
 
+header {
+  padding: 0 2.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 header .menu-bar-pc {
   background: #fff;
   width: 100%;
   position: fixed;
   z-index: 99;
   top: 0;
-  padding: 0 2.25rem;
+  min-height: 3.875rem;
+}
+
+nav.menu-principal {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  min-height: 5.875rem;
-  border: 1px solid #eaeaea;
+  justify-content: space-between;
+  width: 300px;
 }
-
-header .menu-bar-pc .menu-principal a {
-  padding: 0 0.5625rem;
-}
-
-header .menu-bar-pc .top-redes a {
-  padding: 0 0.5625rem;
-}
-
 
 header .menu-bar-movil {
   background: #fff;
@@ -99,7 +98,6 @@ header .menu-bar-movil {
   justify-content: space-between;
   align-items: center;
   min-height: 5.875rem;
-  border: 1px solid #eaeaea;
 }
 
 header .menu-bar-movil .burger-menu {
@@ -130,14 +128,10 @@ header .menu-bar-movil .slideMenu .top-redes a {
   padding: 0 0.5625rem;
 }
 
-header .menu-bar-movil .slideMenu .menu-principal a {
+.menu-principal a {
   display: block;
   padding: 0.625rem 0;
-  border-top: 1px solid #eaeaea;
-}
-
-.main {
-  margin-top: 5.875rem;
+  text-decoration: none;
 }
 
 .main .portada {
