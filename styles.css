@@ -11,9 +11,16 @@ body {
 }
 
 .container {
-  width: 90%;
+  /*width: 90%;
   max-width: 1080px;
+  margin: 0 auto;*/
+  width: 1000px;
   margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
 }
 
 img {
@@ -39,28 +46,6 @@ a {
 .titulo-seccion p {
   font-size: 1.25rem;
   color: #777;
-}
-
-.imagen-modal {
-  width: 60%;
-  max-width: 1000px;
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.7s ease;
-}
-
-.imagen-modal+i {
-  position: absolute;
-  top: 2%;
-  right: 1%;
-  color: #303133;
-  font-size: 2.25rem;
-  background: #fff;
-  display: inline-block;
-  padding: 0.75rem 0.875rem;
-  cursor: pointer;
 }
 
 header {
@@ -166,7 +151,7 @@ nav.menu-principal {
 .main .nosotros .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .main .nosotros .container .col.izq {
@@ -188,9 +173,17 @@ nav.menu-principal {
   color: #777;
 }
 
+.card {
+  margin: 10px;
+
+}
+
 .card img {
+  height: 300px;
+  width: 300px;
   object-fit: cover;
 }
+
 
 .main .contacto .formulario {
   position: relative;
