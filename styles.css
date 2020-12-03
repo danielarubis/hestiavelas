@@ -45,6 +45,10 @@ a {
   color: #777;
 }
 
+.titulo-productos {
+  padding: 0 4vw;
+}
+
 header.menu-bar-pc {
   padding: 0 2.25rem;
   display: flex;
@@ -96,6 +100,10 @@ nav.menu-principal {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 80px;
+}
+
+.main .productos {
+  padding-top: 5.625rem;
 }
 
 .main .portada .col {
@@ -161,7 +169,7 @@ nav.menu-principal {
 }
 
 .main .nosotros {
-  padding: 5.625rem 0;
+  padding-top: 5.625rem;
 }
 
 .main .nosotros .container {
@@ -189,31 +197,43 @@ nav.menu-principal {
   color: #777;
 }
 
-.productos {
+.cards-container{
   display: grid;
   justify-content: center;
 }
 
 .card {
-  margin: 10px;
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  box-shadow: 8px 3px 3px #c6b497;
+}
 
+.card:hover{
+  opacity: 0.7;
 }
 
 .card img {
   height: 300px;
   width: 300px;
   object-fit: cover;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
 }
 
 .card p {
   text-align: center;
 }
 
+.contacto.container {
+  padding-top: 50px;
+}
+
 .main .contacto .container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 50px;
 }
 
 .main .contacto .formulario {
@@ -301,7 +321,7 @@ nav.menu-principal {
   margin: 0 auto;
   margin-top: 3.125rem;
   padding: 0.9375rem;
-  width: 30%;
+  width: 40%;
   outline: none;
   transition: all 0.3s ease;
 }
