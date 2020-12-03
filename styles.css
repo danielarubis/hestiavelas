@@ -75,26 +75,6 @@ nav.menu-principal {
   text-decoration: none;
 }
 
-#icon-menu {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 20px;
-  top: 16px;
-  font-size: 20px;
-  background: #fafafa;
-  color: #787878;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  padding: 10px;
-}
-
-#icon-menu:hover {
-  opacity: 0.8;
-}
-
 .main .portada {
   display: flex;
   flex-wrap: wrap;
@@ -250,14 +230,14 @@ nav.menu-principal {
   width: 90%;
 }
 
-.main .contacto .formulario .formulario_contacto .input-group {
+.main .contacto .formulario .input-group {
   position: relative;
   margin-bottom: 2rem;
 }
 
-.main .contacto .formulario .formulario_contacto .input-group input[type="text"],
-.main .contacto .formulario .formulario_contacto .input-group input[type="email"],
-.main .contacto .formulario .formulario_contacto .input-group textarea {
+.main .contacto .formulario .input-group input[type="text"],
+.main .contacto .formulario .input-group input[type="email"],
+.main .contacto .formulario .input-group textarea {
   font-family: 'Poppins', serif;
   font-size: 1rem;
   color: #303133;
@@ -270,25 +250,25 @@ nav.menu-principal {
   vertical-align: top;
 }
 
-.main .contacto .formulario .formulario_contacto .input-group input[type="text"]:focus,
-.main .contacto .formulario .formulario_contacto .input-group input[type="email"]:focus,
-.main .contacto .formulario .formulario_contacto .input-group textarea:focus {
+.main .contacto .formulario .input-group input[type="text"]:focus,
+.main .contacto .formulario .input-group input[type="email"]:focus,
+.main .contacto .formulario .input-group textarea:focus {
   border-bottom: 2px solid #b4975a;
 }
 
-.main .contacto .formulario .formulario_contacto .input-group textarea {
+.main .contacto .formulario .input-group textarea {
   max-width: 100%;
   max-height: 10.25rem;
   min-height: 5.125rem;
   min-width: 100%;
 }
 
-.main .contacto .formulario .formulario_contacto .input-group label {
+.main .contacto .formulario .input-group label {
   color: #777;
   font-family: 'Poppins', serif;
 }
 
-.main .contacto .formulario .formulario_contacto .input-group label.label {
+.main .contacto .formulario .input-group label.label {
   position: absolute;
   top: 1rem;
   left: 0;
@@ -298,7 +278,7 @@ nav.menu-principal {
   transition: all 0.3s ease;
 }
 
-.main .contacto .formulario .formulario_contacto .input-group label.label.active {
+.main .contacto .formulario .input-group label.label.active {
   top: -0.75rem;
   margin-left: 0;
   font-size: 0.75rem;
@@ -306,14 +286,14 @@ nav.menu-principal {
   color: #777;
 }
 
-.main .contacto .formulario .formulario_contacto .input-group .error {
+.main .contacto .formulario .input-group .error {
   position: absolute;
   color: #ff3b3b;
   font-family: 'Poppins', serif;
   font-size: 0.875rem;
 }
 
-.main .contacto .formulario .formulario_contacto input[type="submit"] {
+.main .contacto .formulario input[type="submit"] {
   font-family: 'Poppins', serif;
   background: #c6b497;
   color: #fff;
@@ -329,7 +309,7 @@ nav.menu-principal {
   transition: all 0.3s ease;
 }
 
-.main .contacto .formulario .formulario_contacto input[type="submit"]:hover {
+.main .contacto .formulario input[type="submit"]:hover {
   background: #977c44;
 }
 
@@ -454,3 +434,25 @@ footer {
     margin-top: 124px;
   }
 }
+
+/*
+#icon-menu {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  font-size: 20px;
+  background: #fafafa;
+  color: #787878;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#icon-menu:hover {
+  opacity: 0.8;
+}
+*/
