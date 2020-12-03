@@ -433,4 +433,24 @@ footer {
   .col.izq {
     max-width: 90%;
   }
+
+  .main .portada {
+    display: inherit;
+  }
+
+  .main .portada .col {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 640px ){
+  header.menu-bar-pc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main .portada {
+    margin-top: 124px;
+  }
 }
