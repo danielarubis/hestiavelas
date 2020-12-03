@@ -6,15 +6,13 @@
 
 body {
   font-size: 16px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   color: #303133;
 }
 
 .container {
-  /*width: 90%;
+  width: 90%;
   max-width: 1080px;
-  margin: 0 auto;*/
-  width: 1000px;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -39,7 +37,6 @@ a {
   font-weight: 400;
   line-height: 3.6875;
   margin-bottom: 1.125rem;
-  font-style: italic;
   letter-spacing: -0.02em;
 }
 
@@ -48,14 +45,11 @@ a {
   color: #777;
 }
 
-header {
+header.menu-bar-pc {
   padding: 0 2.25rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-header .menu-bar-pc {
   background: #fff;
   width: 100%;
   position: fixed;
@@ -72,21 +66,42 @@ nav.menu-principal {
 }
 
 .menu-principal a {
-  display: block;
+  display: inline-block;
   padding: 0.625rem 0;
   text-decoration: none;
+}
+
+#icon-menu {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  font-size: 20px;
+  background: #fafafa;
+  color: #787878;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#icon-menu:hover {
+  opacity: 0.8;
 }
 
 .main .portada {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 80px;
 }
 
 .main .portada .col {
   width: 50%;
   background: #c6b497;
-  color: #fff;
+  color: black;
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
@@ -101,7 +116,7 @@ nav.menu-principal {
 
 .main .portada .col .foto.izq {
   background-image: url(./img/card1.jpg);
-  background-position: center left;
+  background-position: center;
 }
 
 .main .portada .col .foto.der {
@@ -112,18 +127,19 @@ nav.menu-principal {
 
 .main .portada .col .texto {
   width: 50%;
-  padding: 3.375rem;
+  padding: 5.5vw 3.375vw;
+  text-align: center;
 }
 
 .main .portada .col .texto h2 {
-  font-size: 1.81rem;
+  font-size: 2.8vmin;
   font-weight: 400;
-  line-height: 2.68rem;
-  margin-bottom: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 1.250rem;
 }
 
 .main .portada .col .texto p {
-  font-size: 0.93rem;
+  font-size: 2.25vmin;
   line-height: 1.75;
 }
 
@@ -173,6 +189,11 @@ nav.menu-principal {
   color: #777;
 }
 
+.productos {
+  display: grid;
+  justify-content: center;
+}
+
 .card {
   margin: 10px;
 
@@ -184,6 +205,16 @@ nav.menu-principal {
   object-fit: cover;
 }
 
+.card p {
+  text-align: center;
+}
+
+.main .contacto .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
 
 .main .contacto .formulario {
   position: relative;
@@ -192,7 +223,7 @@ nav.menu-principal {
   max-width: 40.625rem;
   margin: 0 auto;
   padding: 2.25rem;
-  margin-top: 10px;
+  margin-top: 40px;
   width: 90%;
 }
 
@@ -263,14 +294,14 @@ nav.menu-principal {
   font-family: 'Poppins', serif;
   background: #c6b497;
   color: #fff;
-  border-radius: 1px;
+  border-radius: 5px;
   border: 2px solid #fff;
   cursor: pointer;
   display: block;
   margin: 0 auto;
   margin-top: 3.125rem;
   padding: 0.9375rem;
-  width: 20%;
+  width: 30%;
   outline: none;
   transition: all 0.3s ease;
 }
@@ -280,10 +311,9 @@ nav.menu-principal {
 }
 
 .contacto .titulo-seccion p {
-  margin-top: 30px;
+  margin-top: 100px;
   margin-bottom: 10px;
 }
-
 
 footer {
   margin-top: 2.25rem;
@@ -311,49 +341,29 @@ footer {
 }
 
 .seguinos {
-  color: white;
+  color: black;
   font-size: 150%;
   margin-bottom: 20px;
 }
 
-@media all and (max-width: 800px) {
-  header .menu-bar-pc {
-    display: none;
-  }
+/* Responsive Desingn */
+@media all and (max-width: 1212px) {
 
-  .main .portada .col {
-    width: 100%;
-  }
-
-  .main .portada .col .foto-full.izq {
-    display: none;
-  }
-
-  .main .portada .col .texto h2 {
-    text-align: center;
-  }
-
-  .main .portada .col .texto p {
-    text-align: justify;
-  }
-
-  .main .chef .container .col {
-    width: 100%;
-  }
-
-  .main .chef .container .col .titulo-seccion {
-    padding-left: 0;
-    padding-bottom: 0;
-    text-align: center;
+  .main .portada .col .texto {
+    padding: 1.375rem;
   }
 }
 
-@media all and (max-width: 580px) {
-  .titulo-seccion h2 {
-    font-size: 2rem;
+@media all and (max-width: 1024px ) {
+  .main {
+    width: 100%;
+    flex-direction: column;
   }
 
-  .main .contacto .formulario .formulario_contacto input[type=submit] {
-    width: 100%;
+  .card {
+    display: flex;
+    justify-content: center;
+    max-width: 280px;
+    margin: 10px;
   }
 }
