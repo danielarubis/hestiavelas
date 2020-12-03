@@ -195,7 +195,8 @@ nav.menu-principal {
 }
 
 .cards-container{
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
