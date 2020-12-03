@@ -390,8 +390,8 @@ footer {
   }
 }
 
-@media all and (max-width: 780px ) {
-  .container {
+@media all and (max-width: 1000px) {
+  .main .nosotros.container {
     flex-direction: column;
     align-items: center;
   }
@@ -409,10 +409,6 @@ footer {
     padding-top: 15px;
   }
 
-  .main .contacto .formulario {
-    margin-top: 0;
-  }
-
   .titulo-seccion {
     text-align: center;
   }
@@ -421,7 +417,19 @@ footer {
     line-height: inherit;
   }
 
+}
+
+@media all and (max-width: 780px ) {
+  .main .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main .contacto .formulario {
+    margin-top: 0;
+  }
+
   .col.izq {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
