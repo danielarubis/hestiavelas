@@ -46,7 +46,7 @@ a {
 }
 
 .titulo-productos {
-  padding: 0 4vw;
+  padding: 0 15px;
 }
 
 header.menu-bar-pc {
@@ -170,15 +170,12 @@ nav.menu-principal {
 
 .main .nosotros {
   padding-top: 5.625rem;
-}
-
-.main .nosotros .container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
 
-.main .nosotros .container .col.izq {
+.main .nosotros .col.izq {
   width: 30%;
   border-right: 1px solid #eaeaea;
   display: flex;
@@ -186,12 +183,12 @@ nav.menu-principal {
   padding-right: 5%;
 }
 
-.main .nosotros .container .col.der {
+.main .nosotros .col.der {
   width: 70%;
   padding-left: 5%;
 }
 
-.main .nosotros .container .col.der .texto p {
+.main .nosotros .col.der .texto p {
   font-size: 1.125rem;
   line-height: 1.75;
   color: #777;
@@ -228,6 +225,11 @@ nav.menu-principal {
 
 .contacto.container {
   padding-top: 50px;
+  display: flex;
+}
+
+.col.izq {
+  max-width: 35%;
 }
 
 .main .contacto .container {
@@ -385,5 +387,41 @@ footer {
     justify-content: center;
     max-width: 280px;
     margin: 10px;
+  }
+}
+
+@media all and (max-width: 780px ) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main .nosotros .col.izq {
+    width: 90%;
+    border-right: none;
+    justify-content: center;
+  }
+
+  .main .nosotros .col.der {
+    width: 90%;
+    text-align: justify;
+    padding: inherit;
+    padding-top: 15px;
+  }
+
+  .main .contacto .formulario {
+    margin-top: 0;
+  }
+
+  .titulo-seccion {
+    text-align: center;
+  }
+
+  .titulo-seccion h2 {
+    line-height: inherit;
+  }
+
+  .col.izq {
+    max-width: 100%;
   }
 }
